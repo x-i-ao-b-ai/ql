@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <!---header--->
+  <!---header-->
   <div class="header">
     <div class="banner">
       <div class="banner-wrapper">
@@ -51,7 +51,7 @@
     </div>
 
   </div>
-  <!---content--->
+  <!---content-->
   <div class="content">
     <div class="EducationNews">
       <div class="Column-heading">
@@ -62,27 +62,15 @@
       </div>
       <div class="EducationNews-wrapper">
         <ul>
+        {{range .flash}}
           <li>
-            <img src="img/news1.jpg" class="NewsImg" />
+            <img src="{{.Img}}" class="NewsImg" />
             <div class="Newscontent">
-              <h4>我校在全省研究生联合学位计划工作现场推进会上典型发言</h4>
-              <p>2016年湖北省高校研究生联合学位计划工作现场推进会于9月20日在襄阳市湖北文理学院召开。近30所联合计划高校研究生管理部门负责人参加会议，我校作为典型发言。</p>
+              <h4>{{.Name}}</h4>
+              <p>{{.Desc}}</p>
             </div>
           </li>
-          <li>
-            <img src="img/logo/news0.png" class="NewsImg" />
-            <div class="Newscontent">
-              <h4>加快各领域科技创新，掌握全球科技竞技先机</h4>
-              <p>全国科技创新大会两院院士大会中国科协第九次全国代表大会5月30日在北京召开，习近平主席发表重要讲话。</p>
-            </div>
-          </li>
-          <li>
-            <img src="img/logo/news1.jpg" class="NewsImg" />
-            <div class="Newscontent">
-              <h4>湖北高招政策出台，相比往年八大变化</h4>
-              <p>2016年湖北省普通高校招生政策已经出台。相比往年有8处有较大调整。普通高考考试时间为6月7日、8日，6月23日向考生发放高考成绩。</p>
-            </div>
-          </li>
+          {{end}}
         </ul>
       </div>
     </div>
@@ -96,6 +84,7 @@
         </div>
         <div class="UniversityOnline-wrapper">
           <ul>
+            {{range .news}}{{.}}
             <li>
               <a class="OnlineTitle" href="#">
                 <p><i class="fa fa-hand-o-right" aria-hidden="true">&nbsp;&nbsp;适应新变化，助推新发展。</p></i></a>
@@ -103,41 +92,7 @@
               <p class="OnlineBar">基础学部</p>
               <p class="OnlineTime">2016-10-08</p>
             </li>
-            <li>
-              <a class="OnlineTitle" href="#">
-                <p><i class="fa fa-hand-o-right" aria-hidden="true">&nbsp;&nbsp;高校教师考核评价体系的思考。</p></i></a>
-              <p class="OnlineName">杨学斌</p>
-              <p class="OnlineBar">基础学部</p>
-              <p class="OnlineTime">2016-10-08</p>
-            </li>
-            <li>
-              <a class="OnlineTitle" href="#">
-                <p><i class="fa fa-hand-o-right" aria-hidden="true">&nbsp;&nbsp;适应新变化，助推新发展。</p></i></a>
-              <p class="OnlineName">周依</p>
-              <p class="OnlineBar">基础学部</p>
-              <p class="OnlineTime">2016-10-08</p>
-            </li>
-            <li>
-              <a class="OnlineTitle" href="#">
-                <p><i class="fa fa-hand-o-right" aria-hidden="true">&nbsp;&nbsp;高校教师考核评价体系的思考。</p></i></a>
-              <p class="OnlineName">杨学斌</p>
-              <p class="OnlineBar">基础学部</p>
-              <p class="OnlineTime">2016-10-08</p>
-            </li>
-            <li>
-              <a class="OnlineTitle" href="#">
-                <p><i class="fa fa-hand-o-right" aria-hidden="true">&nbsp;&nbsp;适应新变化，助推新发展。</p></i></a>
-              <p class="OnlineName">周依</p>
-              <p class="OnlineBar">基础学部</p>
-              <p class="OnlineTime">2016-10-08</p>
-            </li>
-            <li>
-              <a class="OnlineTitle" href="#">
-                <p><i class="fa fa-hand-o-right" aria-hidden="true">&nbsp;&nbsp;高校教师考核评价体系的思考。</p></i></a>
-              <p class="OnlineName">杨学斌</p>
-              <p class="OnlineBar">基础学部</p>
-              <p class="OnlineTime">2016-10-08</p>
-            </li>
+            {{end}}
           </ul>
         </div>
       </div>
@@ -271,7 +226,7 @@
       </div>
     </div>
   </div>
-  <!---footer--->
+  <!---footer-->
   <div class="footer">
     <div class="footer-wrapper">
       <div class="footrt-link">
@@ -303,7 +258,7 @@
       </div>
     </div>
   </div>
-  <!---siderbox--->
+  <!---siderbox-->
   <div class="siderbox">
     <ul>
       <li>

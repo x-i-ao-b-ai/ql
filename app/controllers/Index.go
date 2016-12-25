@@ -14,7 +14,7 @@ func (c Index) Index() revel.Result {
 
 	f := make([]bson.M, 0)
 
-	models.List_Flash("webflash", nil, &f, nil, 4)
+	models.List_Flash("webflash", nil, &f, nil, 3)
 	c.RenderArgs["flash"] = f
 
 	link := make([]bson.M, 0)
