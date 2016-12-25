@@ -1,0 +1,337 @@
+*{
+    margin:0;
+    padding: 0; 
+}
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family:"Microsoft yahei";
+    font-size: 16px;
+    line-height: 1.3;
+    color: #000000;
+}
+
+.content{
+    width:100%;
+    height: auto;
+}
+
+.EducationNews{
+        width: 1086px;
+   height: 464px;
+     margin: 50px auto 0;
+}
+.Column-heading{
+    width:100%;
+    height: 37px;
+    border-bottom: 2px solid #CC0808;
+}
+.Column-heading h3{
+    display: block;
+    width:135px;
+    height: 25px;
+    float: left;
+    margin-top:0px;
+    padding-bottom:9px;
+    text-align: left;
+}
+.Column-heading h3 i{
+      color: #CC0808;
+      }
+.Column-heading a{
+    width:100px;
+    float: right;
+      height: 37px;
+}
+.Column-heading a p{
+    float: right;
+    height: 37px;
+    line-height: 37px;
+}
+.Column-heading a p i{
+    color: #CC0808;
+}
+.EducationNews-wrapper{
+    width:100%;
+    height: 400px;
+    padding-top:20px;
+}
+.EducationNews-wrapper ul{
+    text-decoration: none;
+    list-style: none;
+     padding: 0;
+     margin: 0;
+}
+.EducationNews-wrapper ul li{
+    width:335px;
+    height: 400px;
+    float: left;
+    margin-left:40px;
+    padding: 0;
+}
+.EducationNews-wrapper ul li:first-child{
+    margin-left: 0;
+}
+.NewsImg{
+   width:335px;
+    height:200px;
+    margin:0;
+    padding: 0;
+}
+.Newscontent{
+    width:335px;
+    height:135px;
+    margin: 15px 0px 50px;
+
+    overflow: hidden;
+}
+.Newscontent h4{
+    display: block;
+     width:335px;
+     text-align: left;
+    height: 50px;
+    line-height: 25px;
+    overflow: hidden;
+     font-size: 16px;
+}
+.Newscontent p{
+    display: block;
+    width:335px;
+    text-align: left;
+    height: 85px;
+    overflow: hidden;
+    font-size: 14px;
+    line-height:21px;
+}
+.unibackcolor{
+    width:100%;
+    height: 400px;
+    background-color: #F6F6F6;
+}
+.UniversityOnline{
+    width: 1086px;
+    margin:0 auto 0;
+    height: 300px;
+    padding-top:50px;
+}
+
+.UniversityOnline-wrapper{
+    width:100%;
+    height: 230px;
+    padding-top:12px;
+}
+.UniversityOnline-wrapper ul{
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+}
+.UniversityOnline-wrapper ul li{
+    width:100%;
+    height:37px;
+    margin:5px 0px;
+}
+.OnlineTitle{
+    width:565px;
+    height:100%;
+    float: left;
+}
+.OnlineTitle p{
+    font-size: 16px;
+    line-height: 37px;
+}
+.OnlineName{
+    width:130px;
+    height: 100%;
+    float: left;
+     display: block;
+    margin-left: 40px;
+    text-align: right;
+        line-height: 37px;
+}
+.OnlineBar{
+    width:180px;
+    height: 29px;
+    border-radius: 6px;
+    float: left;
+    margin: 4px 0px 4px 40px;
+    display: block;
+    background-color:#EDEDED;
+        line-height: 29px;
+        text-align: center;
+}
+.OnlineTime{
+    float: left;
+    margin-left: 40px;
+    display: block;
+     line-height: 37px;
+     text-align: center;
+}
+
+.EducationFocus{
+    width: 1086px; 
+     margin: 50px auto 50px;
+}
+
+.EducationFocus-wrapper{
+    width: 100%;
+   height:300px;
+   padding-top:20px;
+}
+.EducationFocus-wrapper div{
+    width:348px;
+    height: 100%;
+    float: left;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.EducationFocus-wrapper div:first-child{
+     margin-left: 0px;
+}
+.Focuson{
+    background-color: #F6F6F6;
+}
+.FocusonImg{
+   width:343px;
+   height:240px;
+}
+.FocusonTitle{
+  display: block;
+  width:100%;
+  height: 40px;
+  margin: 10px 0;
+ font-size: 16px;
+ font-weight: 600;
+}
+.FocusLeft{
+    line-height: 24px;
+    text-align: left;
+
+}
+.FocusLeft p{
+    font-size: 14px;
+    display: block;
+    width:100%;
+    height: auto;
+    margin-top: 14px;
+}
+.Focusright{
+     line-height: 24px;
+    text-align: left;
+}
+.Focusright p{
+    font-size: 14px;
+     display: block;
+    width:100%;
+    height: auto;
+    margin-top: 14px;
+}
+.sclbackcolor{
+    background-color: #F6F6F6;
+    width:100%;
+    height: 400px;
+    margin-top:20px;
+}
+.ScholarsInterview{
+    width: 1086px;
+    padding-top:50px;
+    margin: 0 auto 0;
+}
+.ScholarsInterview-wrapper{
+    width: 100%;
+    height: 260px;
+    padding-top: 20px;
+}
+.ScholarsInterview-wrapper ul{
+    text-decoration: none;
+    list-style: none;
+}
+.ScholarsInterview-wrapper ul li{
+    margin: 0px  16px;
+    width: 340px;
+    float: left;
+}
+.ScholarsInterview-wrapper ul li:first-child{
+    margin-left:0;
+}
+.ScholarsInterview-wrapper ul li:last-child{
+    margin-right:0;
+}
+.InterviewHead{
+    width:110px;
+    height: 220px;
+    float: left;
+    margin-top:27px;
+}
+.InterviewHead h4{
+    margin-top:10px;
+}
+.InterviewContent{
+    width:210px;
+    float: left;
+    margin:0px 0px 20px 20px;
+    overflow: hidden;
+}
+.InterviewContent h4{
+    display: block;
+    width:100%;
+    height: 30px;
+    line-height: 30px;
+}
+.InterviewContent p{
+    display: block;
+    width:100%;
+    height: 226px;
+    margin-top:10px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    overflow: hidden;
+}
+.InterHeadImg{
+    width: 107px;
+    height: 156px;
+}
+.LatestNews{
+    width:1086px;
+      margin: 50px auto 0;
+    height: 300px;
+}
+.LatestNews-wrapper{
+  width:100%;
+  height: 206px;
+  padding-top:10px;
+  padding-bottom: 50px;
+}
+.LatestNews-wrapper ul{
+    text-decoration: none;
+    list-style: none;
+    width:543px;
+    display: block;
+    height: auto;
+    float: left;
+}
+.LatestNews-wrapper ul li{
+    width:543px;
+    height: 30px;
+    margin: 5px 0px;
+    float: left;
+}
+.LNewsTime{
+    display: block;
+    height:30px;
+    line-height: 30px;
+    width:150px;
+    float: left;
+    text-align: left;
+}
+.LNewsTitle{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+   
+    width:300px;
+    float: left;
+     text-align: left;
+    margin-left:50px;
+}

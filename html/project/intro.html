@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=gbk">
+    <meta name="keyword" content="天预报代码，天气预报代码调用。天气预报模块">
+    <meta name="decsription" content="">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/item.css">
+    <link rel="stylesheet" href="css/MainPage.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+</head>
+
+<body>
+    <!---header--->
+    <div class="header">
+        <div class="banner">
+            <div class="banner-wrapper">
+                <div class="banner-wrapper_left">
+                    <iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=11" width="500" height="15" style="height:15px;line-height:15px;margin-top:12px;"
+                        frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                </div>
+                <div class="banner-wrapper_right">
+                    <button class="banner-button">登入</button>
+                    <button class="banner-button">注册</button>
+                    <a href="#">
+                        <p>联系我们</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-wrap">
+            <div class="logo">
+                <img src="img/logo1.png" class="logo-img1" />
+                <img src="img/logo2.png" class="logo-img2" />
+            </div>
+            <div class="nav">
+                <div class="nav-wrap">
+                    <ul>
+                        <li class="nav-li"><a href="#">本院简介</a></li>
+                        <li class="nav-li"><a href="#">项目管理</a></li>
+                        <li class="nav-li"><a href="#">公示公告</a></li>
+                        <li class="nav-li"><a href="#">文件下载</a></li>
+                        <li class="nav-li"><a href="#">留言板</a></li>
+                        <li class="nav-li"><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!---content--->
+    <div class="content">
+        <div class="contain">
+            <div class="content-nav">
+                <div class="content-top">
+                    <span class="bread">当前位置：
+                    <a href="#">首页</a>&nbsp;&gt;&nbsp;
+                    <a href="#">本院简介</a>
+                </span>
+                    <form class="search">
+                        <label>站内搜索：
+                            <input type="text" value="请输入关键字" onfocus="if(value=='请输入关键字'){value=''}" onblur="if(value==''){value='请输入关键字'}"/>
+                      <button type="submit" value="请输入关键字" class="nav-submit"><i class="fa fa-search fa-lg"></i></label>
+
+                    </form>
+                </div>
+            </div>
+            <div class="contain_center">
+                <div class="content-left">
+                    <div class="sidebar">
+                        <ul class="tab_title">
+                            <li><a class="tag">栏目导航</a></li>
+                        </ul>
+                        <ul class="active_nav">
+                            <li><a href="#">&gt;本院简介</a></li>
+                            <li><a href="#">&gt;项目管理</a></li>
+                            <li><a href="#">&gt;公示公告</a></li>
+                            <li><a href="#">&gt;文件下载</a></li>
+                            <li><a href="#">&gt;联系我们</a></li>
+                            <li><a href="#">&gt;留言板</a></li>
+                        </ul>
+                        <ul class="tab_title">
+                            <li><a class="tag">重点推荐</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-right">
+                    <ul class="msg_title">
+                        <li><a class="tag">本院简介</a></li>
+                    </ul>
+                    <ul class="new_list">
+                        <li class="list">
+                            <a href="#">关于组织申报教育教学研究面上项目工作的通知</a>
+                            <span>2016年10月15号</span>
+                        </li>
+                    </ul>
+                    <div class="fenye">
+                        页次：1/1&nbsp;每页25&nbsp;总数1&nbsp;&nbsp;&nbsp;&nbsp;首页&nbsp;&nbsp;上一页&nbsp;&nbsp;下一页&nbsp;&nbsp;尾页&nbsp;&nbsp;&nbsp;&nbsp;转到:
+                        <select name="select" onchange="self.location.href=this.options[this.selectedIndex].value">
+                            <option value="/gdjy/a101/index.html" selected="">第 1 页</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---footer--->
+    <div class="footer">
+        <div class="footer-wrapper">
+            <div class="footrt-link">
+                <ul>
+                    <li><a>文华学院</a></li>
+                    <li><a>城市学院</a></li>
+                    <li><a>知行学院</a></li>
+                    <li><a>文理学院</a></li>
+                    <li><a>法商学院</a></li>
+                    <li><a>科技学院</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottum">
+                <div class="copyright">
+                    <p>极限物联网络公司&nbsp;版权所有</p>
+                    <P>地址：湖北省武汉市洪山区文华路文华学院</P>
+                    <p>ICP备案编号：鄂ICP备00000000号-1</p>
+                </div>
+                <div class="erwema">
+                    <div class="weixin">
+                        <img src="img/weixin.jpg" />
+                        <p>官方微信</p>
+                    </div>
+                    <div class="weixin1">
+                        <img src="img/weixin.jpg" />
+                        <p>官方APP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
