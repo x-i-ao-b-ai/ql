@@ -1,0 +1,76 @@
+<metapackage xmlns:os="http://opensuse.org/Standards/One_Click_Install" xmlns="http://opensuse.org/Standards/One_Click_Install">
+  <group>
+    <repositories>
+      <repository recommended="true">
+        <name>Virtualization</name>
+        <summary></summary>
+        <description>Factory development project for virtualization-related packages
+</description>
+        <url>http://download.opensuse.org/repositories/Virtualization/openSUSE_13.1/</url>
+      </repository>
+      <repository recommended="true">
+        <name>devel:languages:go</name>
+        <summary>The Go Programming Language</summary>
+        <description>This repository contains packages related to the Go programming language (designed by Robert Griesemer, Rob Pike and Ken Thompson).
+
+Go is an expressive, concurrent, garbage collected systems programming language that is type safe and memory safe. It has pointers but no pointer arithmetic. Go has fast builds, clean syntax, garbage collection, methods for any type, and run-time reflection. It feels like a dynamic language but has the speed and safety of a static language.
+
+http://en.opensuse.org/openSUSE:Packaging_Go</description>
+        <url>http://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_13.1/</url>
+      </repository>
+      <repository recommended="true">
+        <name>devel:languages:ocaml</name>
+        <summary>OCaml</summary>
+        <description>OCaml - http://ocaml.org/</description>
+        <url>http://download.opensuse.org/repositories/devel:/languages:/ocaml/openSUSE_13.1/</url>
+      </repository>
+      <repository recommended="true">
+        <name>openSUSE:13.1:Update</name>
+        <summary>Online updates for openSUSE 13.1</summary>
+        <description>This project is releasing the official updates for openSUSE 13.1.</description>
+        <url>http://download.opensuse.org/update/13.1/</url>
+      </repository>
+      <repository recommended="true">
+        <name>openSUSE:13.1:Update</name>
+        <summary>Online updates for openSUSE 13.1</summary>
+        <description>This project is releasing the official updates for openSUSE 13.1.</description>
+        <url>http://download.opensuse.org/ports/update/13.1/</url>
+      </repository>
+      <repository recommended="true">
+        <name>openSUSE:13.1</name>
+        <summary>Official 13.1 openSUSE distribution</summary>
+        <description>This project builds the official 13.1 openSUSE distribution.
+
+Have a look at http://en.opensuse.org/Portal:13.1 for more details.</description>
+        <url>http://download.opensuse.org/repositories/openSUSE:/13.1/ports/</url>
+      </repository>
+      <repository recommended="true">
+        <name>openSUSE:13.1:Ports</name>
+        <summary></summary>
+        <description></description>
+        <url>http://download.opensuse.org/repositories/openSUSE:/13.1:/Ports/extra/</url>
+      </repository>
+      <repository recommended="false">
+        <name>openSUSE:13.1</name>
+        <summary>Official 13.1 openSUSE distribution</summary>
+        <description>This project builds the official 13.1 openSUSE distribution.
+
+Have a look at http://en.opensuse.org/Portal:13.1 for more details.</description>
+        <url>http://download.opensuse.org/distribution/13.1/repo/oss/</url>
+      </repository>
+    </repositories>
+    <software>
+      <item>
+        <name>docker</name>
+        <summary>The Linux container runtime</summary>
+        <description>Docker complements LXC with a high-level API which operates at the process
+level. It runs unix processes with strong guarantees of isolation and
+repeatability across servers.
+
+Docker is a great building block for automating distributed systems: large-scale
+web deployments, database clusters, continuous deployment systems, private PaaS,
+service-oriented architectures, etc.</description>
+      </item>
+    </software>
+  </group>
+</metapackage>

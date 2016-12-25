@@ -1,0 +1,17 @@
+.topnav-left li{
+ margin-right:5px;}
+
+.topnav-left li a.sprit {
+padding-right: 8px;}.logos img{
+max-width: 100%;
+box-sizing: border-box;}#animateslider li{
+width:25%;}
+
+#animateslider:hover li{
+width:20%;}
+
+#animateslider li:hover{
+width:40%;}
+
+#animateslider li:hover .full{
+ display:block;}

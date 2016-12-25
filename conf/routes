@@ -1,0 +1,24 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+module:WebCore
+
+GET     /                                       Index.Index
+GET     /Nor/:tid/List                          Nor.List
+GET     /Nor/:tid/:id                           Nor.Cout
+
+GET     /Cout/:tid/List                         Cout.List
+
+GET     /Img/:tid/List                          Img.List
+GET     /Img/:tid/:id                           Img.Cout
+GET  	/M							            M.Index
+
+# Ignore favicon requests
+GET     /favicon.ico                            404
+
+
+# Catch all
+*       /:controller/:action                    :controller.:action
+
+GET     /static/*filepath                       Static.Serve("static")

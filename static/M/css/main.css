@@ -1,0 +1,239 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+body, .logoFitter {
+    background-color: #000033;
+}
+
+.main-wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    list-style: none;
+    width: 390px;
+    /* height: 330px; */
+    padding: 0;
+    margin-left: -195px;
+    margin-top: -212px;
+}
+
+.main-wrap li {
+    width: 190px;
+    height: 135px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+    color: #fff;
+    /* border-radius: 4px; */
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+.main-wrap li:nth-child(2n) {
+    margin-right: 0px;
+}
+
+.main-wrap li a {
+    font-size: 20px;
+    line-height: 125px;
+    padding-left: 20px;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+
+.main-wrap li:nth-child(2n) a {
+    float: right;
+    padding-left: 0;
+    padding-right: 20px;
+    width: 170px;
+    text-align: right;
+}
+
+.logoContainer {
+    width: 207px;
+    height: 189px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-top: -91px;
+    margin-left: -109px;
+    z-index: 3;
+}
+
+.logoFitter {
+    width: 162px;
+    height: 162px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-top: -80px;
+    margin-left: -87px;
+    z-index: 2;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.logoContainer .title {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    width: 100%;
+    margin-top: -14px;
+    z-index: 3;
+}
+
+.main-wrap li:nth-child(3) a,.main-wrap li:nth-child(4) a {
+    line-height: 30px;
+    width: 40px;
+    margin-top: 38px;
+}
+
+@media screen and (max-width: 390px) {
+    .main-wrap {
+        width: 296px;
+        margin-left: -148px;
+        margin-top: -180px;
+    }
+
+    .main-wrap li {
+        width: 142px;
+        margin-right: 10px;
+        height: 110px;
+    }
+
+    .main-wrap li a {
+        font-size: 16px;
+        line-height: 110px;
+    }
+
+    .main-wrap li:nth-child(2n) a {
+        width: 125px;
+    }
+
+    .logoFitter {
+        width: 134px;
+        height: 134px;
+        margin-top: -72px;
+        margin-left: -67px;
+    }
+
+    .logoContainer{
+        width: 166px;
+        height: 166px;
+        margin-left: -83px;
+        margin-top: -78px;
+    }
+    .logoContainer .title {
+        margin-top: -19px;
+    }
+    .main-wrap li:nth-child(3) a ,.main-wrap li:nth-child(4) a {
+        line-height: 30px;
+width: 34px;
+margin-top: 34px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .main-wrap {
+        width: 600px;
+        margin-left: -300px;
+        margin-top: -200px;
+    }
+
+    .main-wrap li {
+        width: 295px;
+        margin-right: 10px;
+        height: 125px;
+    }
+
+    .main-wrap li a {
+        font-size: 22px;
+    }
+
+    .main-wrap li:nth-child(2n) a {
+        width: 275px;
+    }
+
+    .logoFitter {
+        width: 170px;
+        height: 170px;
+        margin-top: -88px;
+        margin-left: -85px;
+    }
+
+    .logoContainer{
+        width: 219px;
+        margin-left: -111px;
+        margin-top: -100px;
+    }
+    .logoContainer .title{
+        margin-top: -9px;
+    }
+
+    .main-wrap li:nth-child(3) a,.main-wrap li:nth-child(4) a{
+        line-height: 125px;
+        width: 275px;
+        margin-top: 0px;
+    }
+
+}
+
+.logoContainer #logo-bg {
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 50.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-transform-origin: 50% 50%;
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 50.5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-transform-origin: 50% 50%;
+    -ms-animation-name: rotate;
+    -ms-animation-duration: 150.5s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-transform-origin: 50% 50%;
+    -o-animation-name: rotate;
+    -o-animation-duration: 50.5s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    width: 90%;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes rotate {
+    from {
+        -ms-transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotate {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+

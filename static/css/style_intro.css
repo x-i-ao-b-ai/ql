@@ -1,0 +1,68 @@
+
+.intro_hover {
+    width: 75px;
+    float: left;
+    margin-left: 10px;
+    height: 26px;
+    background-image: url("../images/img/ceee_intro_onhover.gif");
+    font-size: 12px;
+    color: #000000;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF
+}
+
+.intro_link {
+    width: 75px;
+    float: left;
+    margin-left: 10px;
+    height: 26px;
+    background-image: url('../images/img/ceee_intro_link.gif');
+    text-align: center;
+}
+
+.intro_a {
+    font-size: 12px;
+    color: #666666;
+    display: block;
+    width: 73px;
+    height: 18px;
+    text-decoration: none;
+    line-height: 20px;
+    padding-top: 2px;
+}
+
+.intro_a:hover {
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    line-height: 18px;
+    height: 16px;
+    padding-top: 2px;
+}
+
+#struc a {
+    font-size: 12px;
+    color: #555555;
+    display: block;
+    clear: both;
+    margin-left: 30px;
+    text-decoration: underline
+}
+
+#struc a:hover {
+    color: #FF0000;
+}
+
+#struc2 a {
+    font-size: 12px;
+    color: #555555;
+    display: block;
+    clear: both;
+    margin-left: 0px;
+    text-decoration: none
+}
+
+#struc2 a:hover {
+    color: #FF0000;
+}
