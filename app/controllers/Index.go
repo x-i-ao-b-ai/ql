@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"WEB/WebCore/app/models"
+
 	"github.com/revel/revel"
 	"labix.org/v2/mgo/bson"
 )
@@ -22,7 +23,7 @@ func (c Index) Index() revel.Result {
 	c.RenderArgs["link"] = link
 
 	news := make([]bson.M, 0)
-	models.List_Limit("doc", bson.M{"Tid": "news"}, &news, nil, 6)
+	models.List_Limit("doc", bson.M{"Tid": "news"}, &news, nil, 2)
 	c.RenderArgs["news"] = news
 
 	notic := make([]bson.M, 0)
