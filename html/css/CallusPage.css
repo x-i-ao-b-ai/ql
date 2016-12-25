@@ -1,0 +1,75 @@
+
+
+.AnnocePage{
+   width:1086px;
+   height: auto;
+   margin: 20px auto;
+}
+
+.main-left-part ul li:first-child a{
+     background: #CC0808;
+     color: #fff;
+}
+.main-right{
+    width:758px;
+    height:auto;
+   float:left;
+   margin-left: 15px;
+}
+.right-title{
+    width:100%;
+    height: 37px;
+    border-bottom: 2px solid #E8E8E8; 
+}
+.right-title p{
+    width:66px;
+    height: 28px;
+    line-height: 28px;
+    display: block;
+    padding-top: 5px;
+    border-bottom:5px solid #194FA9;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    color: #194FA9;
+}
+.right-wrap{
+    width:100%;
+    height: auto;
+    margin-top:10px;
+    text-decoration: none;
+    text-align: left;
+    list-style: none;
+}
+.we_centent {
+	width: 100%;
+	height: 300px;
+	float: left;
+}
+
+.name {
+	display: block;
+	font-size: 22px;
+	width: 100%;
+	height: 100px;
+	color: red;
+	margin: auto;
+	line-height: 5;
+	text-align: center;
+	
+	border-bottom: solid 2px red;
+}
+.present {
+	display: block;
+	font-size: 16px;
+	width: 100%;
+	height: 100px;
+	padding-top: 40px;
+	color: black;
+	margin: auto;
+	line-height: 3;
+	text-align: center;
+	
+	
+}
+

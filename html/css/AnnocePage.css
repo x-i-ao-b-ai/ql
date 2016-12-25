@@ -1,0 +1,68 @@
+
+.AnnocePage{
+   width:1086px;
+   height: auto;
+   margin: 20px auto;
+}
+.main-left-part ul li:nth-child(3) a{
+     background: #CC0808;
+     color: #fff;
+}
+.main-right{
+    width:758px;
+    height:auto;
+   float:left;
+   margin-left: 15px;
+}
+.right-title{
+    width:100%;
+    height: 37px;
+    border-bottom: 2px solid #E8E8E8; 
+}
+.right-title p{
+    width:66px;
+    height: 28px;
+    line-height: 28px;
+    display: block;
+    padding-top: 5px;
+    border-bottom:5px solid #194FA9;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    color: #194FA9;
+}
+.right-wrap{
+    width:100%;
+    height: auto;
+    margin-top:10px;
+    text-decoration: none;
+    text-align: left;
+    list-style: none;
+}
+.right-wrap li{
+    width:100%;
+    height: 37px;
+    border-bottom: 1px dotted #CCCCCC;
+}
+.right-wrap li a p{
+    width:500px;
+    height: 37px;
+    float: left;
+    line-height: 37px;
+    display: block;
+}
+.right-wrap li a span{
+    width:200px;
+    height: 37px;
+    float: right;
+    line-height: 37px;
+    text-align: right;
+    display: block;
+}
+.fenye{
+    width:100%;
+    height: 37px;
+    margin-top:10px;
+}
+
+
