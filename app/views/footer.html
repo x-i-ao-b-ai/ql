@@ -2,12 +2,9 @@
             <div class="footer-wrapper">
                 <div class="footrt-link">
                     <ul>
-                        <li><a href="#">文华学院</a></li>
-                        <li><a href="#">城市学院</a></li>
-                        <li><a href="#">知行学院</a></li>
-                        <li><a href="#">文理学院</a></li>
-                         <li><a href="#">法商学院</a></li>
-                        <li><a href="#">科技学院</a></li>
+                     {{range .news}}
+                        <li><a href="#">{{.Name}}}</a></li>
+                     {{end}}
                     </ul>
                 </div>
                 <div class="footer-bottum">
