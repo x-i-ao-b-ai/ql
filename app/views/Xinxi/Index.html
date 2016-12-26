@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="Content-Type" content="text/html;charset=gbk">
@@ -24,11 +23,7 @@
 </head>
 
 <body>
-<<<<<<< HEAD
-  <!---header-->
-=======
   <!--header-->
->>>>>>> 84e65a2ed966d20391fa2bfda6001b8268ccb96d
   <div class="header">
     <div class="banner">
       <div class="banner-wrapper">
@@ -49,12 +44,12 @@
   <div class="nav">
     <div class="nav-wrap">
       <ul>
-        <li class="nav-li"><a href="#">本院简介</a></li>
-        <li class="nav-li"><a href="#">项目管理</a></li>
-        <li class="nav-li"><a href="#">公示公告</a></li>
-        <li class="nav-li"><a href="#">文件下载</a></li>
-        <li class="nav-li"><a href="#">留言板</a></li>
-        <li class="nav-li"><a href="#">联系我们</a></li>
+        <li class="nav-li"><a href=" ">本院简介</a ></li>
+        <li class="nav-li"><a href="#">项目管理</a ></li>
+        <li class="nav-li"><a href="#">公示公告</a ></li>
+        <li class="nav-li"><a href="#">文件下载</a ></li>
+        <li class="nav-li"><a href="#">留言板</a ></li>
+        <li class="nav-li"><a href="#">联系我们</a ></li>
       </ul>
     </div>
   </div>
@@ -67,8 +62,8 @@
     <div class="Column-heading">
       <h3><i class="fa fa-map-signs fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;教育要闻</h3>
       <a href="#">
-        <p>更多&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
-      </a>
+        <p>更多&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></p >
+      </a >
     </div>
     <div class="EducationNews-wrapper">
       <ul>
@@ -78,105 +73,54 @@
             <img src="{{.Img}}" class="NewsImg" />
             <div class="Newscontent">
               <h4>{{.Name}}</h4>
-              <p>{{.Desc}}</p>
+              <p>{{.Desc}}</p >
             </div>
-          </a>
+          </a >
         </li>
         {{end}}
       </ul>
     </div>
   </div>
-<<<<<<< HEAD
-  <!---content-->
-  <div class="content">
-    <div class="EducationNews">
-      <div class="Column-heading">
-        <h3><i class="fa fa-map-signs fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;教育要闻</h3>
-=======
   <div class="unibackcolor">
     <div class="UniversityOnline">
       <div class="Column-heading UniOnline-titile">
         <h3 class=""><i class="fa fa-send fa-lg" aria-hidden="true"></i> &nbsp;&nbsp;院校在线</h3>
->>>>>>> 84e65a2ed966d20391fa2bfda6001b8268ccb96d
         <a href="#">
           <p>更多&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
-        </a>
+        </a >
       </div>
       <div class="UniversityOnline-wrapper">
         <ul>
-<<<<<<< HEAD
-        {{range .flash}}
-          <li>
-            <img src="{{.Img}}" class="NewsImg" />
-            <div class="Newscontent">
-              <h4>{{.Name}}</h4>
-              <p>{{.Desc}}</p>
-            </div>
-=======
-          {{range .news}}
+          {{range .news}} 
           <li>
             <a class="OnlineTitle" href="#">
-              <p><i class="fa fa-hand-o-right" aria-hidden="true">&nbsp;&nbsp;{{.Name}}</p></i></a>
-            <p class="OnlineName">{{.Writer}}</p>
-            <p class="OnlineBar">{{.Tag}}</p>
-            <p class="OnlineTime">{{time2014 .Utime}}</p>
->>>>>>> 84e65a2ed966d20391fa2bfda6001b8268ccb96d
+              <p><i class="fa fa-hand-o-right" aria-hidden="true">&nbsp;&nbsp;{{.Name}}</p ></i></a >
+            <p class="OnlineName">{{.Writer}}</p >
+            <p class="OnlineBar">{{.Tag}}</p >
+            <p class="OnlineTime">{{time2014 .Utime}}</p >
           </li>
           {{end}}
         </ul>
       </div>
     </div>
-<<<<<<< HEAD
-    <div class="unibackcolor">
-      <div class="UniversityOnline">
-        <div class="Column-heading UniOnline-titile">
-          <h3 class=""><i class="fa fa-send fa-lg" aria-hidden="true"></i> &nbsp;&nbsp;院校在线</h3>
-          <a href="#">
-            <p>更多&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
-          </a>
-        </div>
-        <div class="UniversityOnline-wrapper">
-          <ul>
-            {{range .news}}{{.}}
-            <li>
-              <a class="OnlineTitle" href="#">
-                <p><i class="fa fa-hand-o-right" aria-hidden="true">&nbsp;&nbsp;适应新变化，助推新发展。</p></i></a>
-              <p class="OnlineName">周依</p>
-              <p class="OnlineBar">基础学部</p>
-              <p class="OnlineTime">2016-10-08</p>
-            </li>
-            {{end}}
-          </ul>
-        </div>
-      </div>
-    </div>
-=======
   </div>
->>>>>>> 84e65a2ed966d20391fa2bfda6001b8268ccb96d
 
   <div class="EducationFocus">
     <div class="Column-heading">
       <h3><i class="fa fa-bookmark fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;教育聚焦</h3>
       <a href="#">
-        <p>更多&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
-      </a>
+        <p>更多&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></p >
+      </a >
 
     </div>
     <div class="EducationFocus-wrapper">
+      {{range .news}}  
       <div class="FocusLeft">
-        <h4>习总书记寄予清华大学，表达对高等教育的殷切期望</h4>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;习近平总书记4月22日给清华大学建校105年校庆的贺信中讲到：“清华大学要坚持正确方向、坚持立德树人、坚持服务国家、坚持改革创新，面向世界、勇于进取，树立自信、保持特色，广育祖国和人民需要的各类人才，深度参与创新驱动发展战略实施，努力在创建世界一流大学方面走在前列，为国家发展、人民幸福、人类文明进步作出新的更大的贡献。”<br>&nbsp;&nbsp;&nbsp;&nbsp;这不仅是对清华大学的寄语，也是对整个高等教育的期望。作为一所民办高校，我们也应该胸怀国家，放眼世界，不断进取，担负起应有的社会和民族发展责任。</p>
+        <h4>{{.Name}}</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;{{.Desc}}
+&nbsp;&nbsp;&nbsp;&nbsp;</p >
       </div>
-      <div class="Focuson">
-        <img src="img/new7.jpg" class="FocusonImg" />
-        <p class="FocusonTitle">凝练办学特色，提升办学水平</p>
-      </div>
-      <div class="Focusright">
-        <h4>总理召开高等教育座谈会，鼓励高等学校办出特色</h4>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;2016年4月15日，李克强总理考察清华大学和北京大学，在北京大学召开高等教育改革创新座谈会。53所在京的部属、市属、民办高校和有关部门负责人参加会议。李克强在会上作重要讲话：<br>&nbsp;&nbsp;&nbsp;&nbsp;
-          对学校来说，首先是培养人才，这是学校的根本任务。当前关键还是要有创新的意识，要有实践的能力。
-          <br>&nbsp;&nbsp;&nbsp;&nbsp;要加快建设一批高水平大学，鼓励公办民办各类学校办出特色、分类发展。现在我们同质化的倾向比较普遍，学校应该有学校的特色，分类发展，不能搞一个模式。</p>
-      </div>
+      {{end}}
     </div>
   </div>
   <div class="sclbackcolor">
@@ -184,114 +128,52 @@
       <div class="Column-heading">
         <h3><i class="fa fa-mortar-board fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;学者访谈</h3>
         <a href="#">
-          <p>更多&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
-        </a>
+          <p>更多&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></p >
+        </a >
 
       </div>
       <div class="ScholarsInterview-wrapper">
         <ul>
+          {{range .news}}  
           <li>
             <div class="InterviewHead">
               <img src="img/new3.jpg" class="InterHeadImg" />
-              <h4>刘献君</h4>
+              <h4>{{.Title}}</h4>
             </div>
             <div class="InterviewContent">
-              <h4>共性生存，特性发展</h4>
-              <p>&nbsp;&nbsp;&nbsp;无论是个人，还是单位，既要生存，又要发展。那么，对于一所民办大学而言，如何生存，如何发展？我多年办学的观察和体会是：共性生存，特性发展。要加快建设一批高水平大学，鼓励公办民办各类学校办出特色、分类发展。现在我们同质化的倾向比较普遍，学校应该有学校的特色...</p>
+              <h4>{{.Name}}</h4>
+              <p>&nbsp;&nbsp;&nbsp;{{.Desc}}</p >
             </div>
           </li>
-          <li>
-            <div class="InterviewHead">
-              <img src="img/new3.jpg" class="InterHeadImg" />
-              <h4>刘献君</h4>
-            </div>
-            <div class="InterviewContent">
-              <h4>共性生存，特性发展</h4>
-              <p>&nbsp;&nbsp;&nbsp;无论是个人，还是单位，既要生存，又要发展。那么，对于一所民办大学而言，如何生存，如何发展？我多年办学的观察和体会是：共性生存，特性发展。要加快建设一批高水平大学，鼓励公办民办各类学校办出特色、分类发展。现在我们同质化的倾向比较普遍，学校应该有学校的特色...</p>
-            </div>
-          </li>
-          <li>
-            <div class="InterviewHead">
-              <img src="img/new3.jpg" class="InterHeadImg" />
-              <h4>刘献君</h4>
-            </div>
-            <div class="InterviewContent">
-              <h4>共性生存，特性发展</h4>
-              <p>&nbsp;&nbsp;&nbsp;无论是个人，还是单位，既要生存，又要发展。那么，对于一所民办大学而言，如何生存，如何发展？我多年办学的观察和体会是：共性生存，特性发展。要加快建设一批高水平大学，鼓励公办民办各类学校办出特色、分类发展。现在我们同质化的倾向比较普遍，学校应该有学校的特色...</p>
-            </div>
-          </li>
+          {{end}}
         </ul>
       </div>
     </div>
   </div>
-<<<<<<< HEAD
-  <!---footer-->
-  <div class="footer">
-    <div class="footer-wrapper">
-      <div class="footrt-link">
-        <ul>
-          <li><a href="#">文华学院</a></li>
-          <li><a href="#">城市学院</a></li>
-          <li><a href="#">知行学院</a></li>
-          <li><a href="#">文理学院</a></li>
-          <li><a href="#">法商学院</a></li>
-          <li><a href="#">科技学院</a></li>
-        </ul>
-=======
   <div class="LatestNews">
     <div class="Column-heading">
       <h3><i class="fa fa-list fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;启林动态</h3>
       <a href="#">
-        <p>更多&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
-      </a>
+        <p>更多&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></p >
+      </a >
 
     </div>
     <div class="LatestNews-wrapper">
       <ul>
+        {{range .news}}
         <li>
-          <p class="LNewsTime"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2016. 9. 26</p>
-          <p class="LNewsTitle">开展应用研究，追求实用成果！</p>
+          <p class="LNewsTime"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;{{time2014 .Utime}}</p >
+          <p class="LNewsTitle">{{.Name}}</p >
         </li>
-        <li>
-          <p class="LNewsTime"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2016. 9. 26</p>
-          <p class="LNewsTitle">青年教师教学竞赛将在所属高校展开</p>
-        </li>
-        <li>
-          <p class="LNewsTime"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2016. 9. 26</p>
-          <p class="LNewsTitle">青年教师教学竞赛将在所属高校展开</p>
-        </li>
-        <li>
-          <p class="LNewsTime"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2016. 9. 26</p>
-          <p class="LNewsTitle">开展应用研究，追求实用成果！</p>
-        </li>
-        <li>
-          <p class="LNewsTime"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2016. 9. 26</p>
-          <p class="LNewsTitle">开展应用研究，追求实用成果！</p>
-        </li>
-
+        {{end}}
       </ul>
       <ul>
+        {{range .news}}
         <li>
-          <p class="LNewsTime"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2016. 9. 26</p>
-          <p class="LNewsTitle">青年教师教学竞赛将在所属高校展开</p>
+          <p class="LNewsTime"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;{{time2014 .Utime}}</p >
+          <p class="LNewsTitle">{{.Name}}</p >
         </li>
-        <li>
-          <p class="LNewsTime"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2016. 9. 26</p>
-          <p class="LNewsTitle">青年教师教学竞赛将在所属高校展开</p>
-        </li>
-        <li>
-          <p class="LNewsTime"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2016. 9. 26</p>
-          <p class="LNewsTitle">开展应用研究，追求实用成果！</p>
-        </li>
-        <li>
-          <p class="LNewsTime"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2016. 9. 26</p>
-          <p class="LNewsTitle">开展应用研究，追求实用成果！</p>
-        </li>
-        <li>
-          <p class="LNewsTime"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2016. 9. 26</p>
-          <p class="LNewsTitle">青年教师教学竞赛将在所属高校展开</p>
-        </li>
-
+        {{end}}
       </ul>
     </div>
   </div>
@@ -301,129 +183,40 @@
   <div class="footer-wrapper">
     <div class="footrt-link">
       <ul>
-        <li><a href="#">文华学院</a></li>
-        <li><a href="#">城市学院</a></li>
-        <li><a href="#">知行学院</a></li>
-        <li><a href="#">文理学院</a></li>
-        <li><a href="#">法商学院</a></li>
-        <li><a href="#">科技学院</a></li>
+        {{range .link}}
+        <li><a href="#">{{.Name}}</a ></li>
+        {{end}}
       </ul>
     </div>
     <div class="footer-bottum">
       <div class="copyright">
-        <p>联系人：黄金刚&nbsp;&nbsp;&nbsp;QQ:124219681&nbsp;&nbsp;&nbsp;电子邮件：124219681@qq.com</p>
+        <p>联系人：黄金刚&nbsp;&nbsp;&nbsp;QQ:124219681&nbsp;&nbsp;&nbsp;电子邮件：124219681@qq.com</p >
         <P>联系地址：湖北省武汉市关山三路58号&nbsp;&nbsp;&nbsp;邮编430074</P>
-        <p>版权所有：文华学院信息科学与技术学部&nbsp;&nbsp;&nbsp;技术支持：极限物联网络公司</p>
->>>>>>> 84e65a2ed966d20391fa2bfda6001b8268ccb96d
+        <p>版权所有：文华学院信息科学与技术学部&nbsp;&nbsp;&nbsp;技术支持：极限物联网络公司</p >
       </div>
       <div class="erwema">
         <div class="weixin">
-          <img src="img/weixin.jpg" />
-          <p>官方微信</p>
+          <img src="/static/img/weixin.jpg" />
+          <p>官方微信</p >
         </div>
         <div class="weixin1">
-          <img src="img/weixin.jpg" />
-          <p>官方APP</p>
+          <img src="/static/img/weixin.jpg" />
+          <p>官方APP</p >
         </div>
       </div>
     </div>
   </div>
-<<<<<<< HEAD
-  <!---siderbox-->
-  <div class="siderbox">
-    <ul>
-      <li>
-        <a href="#">
-          <p>本院简介</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <p>项目管理</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <p>公示公告</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <p>文件下载</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <p>留言板</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <p>联系我们</p>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <!--login-->
-  <div id="login-in">
-    <div class="login-in-wrap">
-      <div class="login-in-top">
-        <span class="login-in-top_left">登入</span>
-        <div class="login-in-top_right"> <button class="login-in-Button login-in-Button--icon login-in-Button--link hasIcon" onclick="loginOut()" type="button">
-                        <i class="fa fa-times" aria-hidden="true"></i>
-                    </button></div>
-      </div>
-      <div class="login-in-contain">
-        <form id="login-in-main">
-          <div class="login-in-form-group">
-            <input class="login-in-form-control" id="ID" placeholder="用户名或邮箱">
-          </div>
-          <div class="login-in-form-group">
-            <input class="login-in-form-control" id="call" placeholder="密码">
-          </div>
-          <span id="submit" class="login-in-btn login-in-btn-default">登入</span>
-        </form>
-      </div>
-      <div class="login-in-footer">
-        <p class="login-in-foot">忘记了密码？
-          <br>还没有注册？ <a href="zhuce.html">注册</a></br>
-        </p>
-      </div>
-=======
 </div>
 <!--siderbox-->
 <div class="siderbox">
   <ul>
+    {{range .news}}
     <li>
       <a href="#">
-        <p>本院简介</p>
-      </a>
+        <p>{{.Name}}</p >
+      </a >
     </li>
-    <li>
-      <a href="#">
-        <p>项目管理</p>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <p>公示公告</p>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <p>文件下载</p>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <p>留言板</p>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <p>联系我们</p>
-      </a>
-    </li>
+   {{end}}
   </ul>
 </div>
 <!--login-->
@@ -441,7 +234,6 @@
   <form id="login-in-main">
     <div class="login-in-form-group">
       <input class="login-in-form-control" id="ID" placeholder="用户名或邮箱">
->>>>>>> 84e65a2ed966d20391fa2bfda6001b8268ccb96d
     </div>
     <div class="login-in-form-group">
       <input class="login-in-form-control" id="call" placeholder="密码">
@@ -451,8 +243,9 @@
 </div>
 <div class="login-in-footer">
   <p class="login-in-foot">忘记了密码？
-    <br>还没有注册？ <a href="zhuce.html">注册</a></br>
-  </p>
+    
+还没有注册？ <a href="zhuce.html">注册</a ></br>
+  </p >
 </div>
 </div>
 </div>
@@ -482,8 +275,8 @@
   </form>
 </div>
 <div class="register-in-footer">
-  <p class="register-in-foot">已经注册过了？ <a href="./denglu.html">登入</a>
-  </p>
+  <p class="register-in-foot">已经注册过了？ <a href="./denglu.html">登入</a >
+  </p >
 </div>
 </div>
 </div>
