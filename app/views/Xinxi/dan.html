@@ -1,0 +1,55 @@
+         {{template "header.html" .}}
+         <!--content-->
+         <div class="content">
+             <div class="AnnocePage">
+                <div class="wrapper-nav">
+                    <div class="nav-id">
+                        <span class="nav-idnow">当前位置：
+                            <a>联系我们</a>
+                        </span>
+                    </div>
+                    <form class="nav-form">
+                      <input class="nav-input" value="请输入关键字" type="text" onfocus="if(value=='请输入关键字'){value=''}" onblur="if(value==''){value='请输入关键字'}"/>
+                      <button type="submit" value="" class="nav-submit"><i class="fa fa-search fa-lg"></i></button>
+                    </form>
+        
+                </div>
+                <div class="wrap-main">
+                    <div class="main-left">
+                        <div class="main-left-part">
+                            <div class="left-part-top">
+                                <p>&nbsp;&nbsp;栏目导航</p>
+                            </div>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;本院简介</a></li>
+                                <li><a href="#"><i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;项目管理</a></li>
+                                <li><a href="#"><i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;公示公告</a></li>
+                                <li><a href="#"><i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;文件下载</a></li>
+                                <li><a href="#"><i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;留言板</a></li>
+                                <li><a href="#"><i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;联系我们</a></li>
+                            </ul>
+                        </div>
+                       <div class="left-part-top" style="margin-top:20px;">
+                                <p>&nbsp;&nbsp;重点推荐</p>
+                            </div>
+                    </div>
+                    <div class="main-right">
+                        <div class="right-title">
+                            <p>联系我们</p>
+                        </div>
+                        <div class="right-wrap">
+                             <div class="we_centent">
+                                <span class="name">单位地址和联系方式</span>
+                                <span class="present">通讯地址：武汉市武昌区水果湖街青年路56号</br>邮政编码：430071</br>办公室电话：027-87325753</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+         </div>
+         
+         <!--footer-->
+        {{template "footer.html" .}}
+        </div>
+    </body>
+</html>
