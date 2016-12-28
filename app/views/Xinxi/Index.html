@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="Content-Type" content="text/html;charset=gbk">
@@ -13,12 +14,12 @@
   <script type="text/javascript" src="/static/js/login.js"></script>
   <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
   <style>
-  .UniversityOnline-wrapper ul li {
+    .UniversityOnline-wrapper ul li {
       width: 100%;
       height: 37px;
       margin: 5px 0px;
       overflow: hidden;
-  }
+    }
   </style>
 </head>
 
@@ -28,163 +29,154 @@
     <div class="banner">
       <div class="banner-wrapper">
         <div class="banner-wrapper_left">
-          <iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=11" width="500" height="15" style="height:15px;line-height:15px;margin-top:12px;" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-</div>
-<div class="banner-wrapper_right">
-  <button class="banner-button" onclick="loginIn()">登入</button>
-<button class="banner-button" onclick="registerIn()">注册</button>
-</div>
-</div>
-</div>
-<div class="header-wrap">
-  <div class="logo">
-    <img src="/static/img/logo/logo58.png" class="logo-img1" />
-    <img src="/static/img/logo/logo0629.gif" class="logo-img2" />
-  </div>
-  <div class="nav">
-    <div class="nav-wrap">
-      <ul>
-        <li class="nav-li"><a href=" ">本院简介</a ></li>
-        <li class="nav-li"><a href="#">项目管理</a ></li>
-        <li class="nav-li"><a href="#">公示公告</a ></li>
-        <li class="nav-li"><a href="#">文件下载</a ></li>
-        <li class="nav-li"><a href="#">留言板</a ></li>
-        <li class="nav-li"><a href="#">联系我们</a ></li>
-      </ul>
+          <iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=11" width="500" height="15" style="height:15px;line-height:15px;margin-top:12px;"
+            frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+        </div>
+        <div class="banner-wrapper_right">
+          <button class="banner-button" onclick="loginIn()">登入</button>
+          <button class="banner-button" onclick="registerIn()">注册</button>
+        </div>
+      </div>
+    </div>
+    <div class="header-wrap">
+      <div class="logo">
+        <img src="/static/img/logo/logo58.png" class="logo-img1" />
+        <img src="/static/img/logo/logo0629.gif" class="logo-img2" />
+      </div>
+      <div class="nav">
+        <div class="nav-wrap">
+          <ul>
+            {{nav "index"}}
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
-<!--content-->
-<div class="content">
-  <div class="EducationNews">
-    <div class="Column-heading">
-      <h3><i class="fa fa-map-signs fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;教育要闻</h3>
-      <a href="#">
-        <p>更多&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></p >
-      </a >
-    </div>
-    <div class="EducationNews-wrapper">
-      <ul>
-        {{range .flash}}
-        <li>
-          <a href="{{.Url}}">
-            <img src="{{.Img}}" class="NewsImg" />
-            <div class="Newscontent">
-              <h4>{{.Name}}</h4>
-              <p>{{.Desc}}</p >
-            </div>
-          </a >
-        </li>
-        {{end}}
-      </ul>
-    </div>
-  </div>
-  <div class="unibackcolor">
-    <div class="UniversityOnline">
-      <div class="Column-heading UniOnline-titile">
-        <h3 class=""><i class="fa fa-send fa-lg" aria-hidden="true"></i> &nbsp;&nbsp;院校在线</h3>
+  <!--content-->
+  <div class="content">
+    <div class="EducationNews">
+      <div class="Column-heading">
+        <h3><i class="fa fa-map-signs fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;教育要闻</h3>
         <a href="#">
           <p>更多&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
-        </a >
+        </a>
       </div>
-      <div class="UniversityOnline-wrapper">
+      <div class="EducationNews-wrapper">
         <ul>
-          {{range .news}} 
+          {{range .flash}}
           <li>
-            <a class="OnlineTitle" href="#">
-              <p><i class="fa fa-hand-o-right" aria-hidden="true">&nbsp;&nbsp;{{.Name}}</p ></i></a >
-            <p class="OnlineName">{{.Writer}}</p >
-            <p class="OnlineBar">{{.Tag}}</p >
-            <p class="OnlineTime">{{time2014 .Utime}}</p >
+            <a href="{{.Url}}">
+              <img src="{{.Img}}" class="NewsImg" />
+              <div class="Newscontent">
+                <h4>{{.Name}}</h4>
+                <p>{{.Desc}}</p>
+              </div>
+            </a>
           </li>
           {{end}}
         </ul>
       </div>
     </div>
-  </div>
-
-  <div class="EducationFocus">
-    <div class="Column-heading">
-      <h3><i class="fa fa-bookmark fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;教育聚焦</h3>
-      <a href="#">
-        <p>更多&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></p >
-      </a >
-
-    </div>
-    <div class="EducationFocus-wrapper">
-      {{range .news}}  
-      <div class="FocusLeft">
-        <h4>{{.Name}}</h4>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;{{.Desc}}
-&nbsp;&nbsp;&nbsp;&nbsp;</p >
+    <div class="unibackcolor">
+      <div class="UniversityOnline">
+        <div class="Column-heading UniOnline-titile">
+          <h3 class=""><i class="fa fa-send fa-lg" aria-hidden="true"></i> &nbsp;&nbsp;院校在线</h3>
+          <a href="#">
+            <p>更多&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
+          </a>
+        </div>
+        <div class="UniversityOnline-wrapper">
+          <ul>
+            {{range .news}}
+            <li>
+              <a class="OnlineTitle" href="#">
+                <p><i class="fa fa-hand-o-right" aria-hidden="true">&nbsp;&nbsp;{{.Name}}</p ></i></a>
+              <p class="OnlineName">{{.Writer}}</p>
+              <p class="OnlineBar">{{.Tag}}</p>
+              <p class="OnlineTime">{{time2014 .Utime}}</p>
+            </li>
+            {{end}}
+          </ul>
+        </div>
       </div>
-      {{end}}
     </div>
-  </div>
-  <div class="sclbackcolor">
-    <div class="ScholarsInterview">
+    <div class="EducationFocus">
       <div class="Column-heading">
-        <h3><i class="fa fa-mortar-board fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;学者访谈</h3>
+        <h3><i class="fa fa-bookmark fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;教育聚焦</h3>
         <a href="#">
-          <p>更多&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></p >
-        </a >
-
+          <p>更多&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
+        </a>
       </div>
-      <div class="ScholarsInterview-wrapper">
+      <div class="EducationFocus-wrapper">
+        {{range .news}}
+        <div class="FocusLeft">
+          <h4>{{.Name}}</h4>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;{{.Desc}} &nbsp;&nbsp;&nbsp;&nbsp;
+          </p>
+        </div>
+        {{end}}
+      </div>
+    </div>
+    <div class="sclbackcolor">
+      <div class="ScholarsInterview">
+        <div class="Column-heading">
+          <h3><i class="fa fa-mortar-board fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;学者访谈</h3>
+          <a href="#">
+            <p>更多&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
+          </a>
+        </div>
+        <div class="ScholarsInterview-wrapper">
+          <ul>
+            {{range .news}}
+            <li>
+              <div class="InterviewHead">
+                <img src="img/new3.jpg" class="InterHeadImg" />
+                <h4>{{.Title}}</h4>
+              </div>
+              <div class="InterviewContent">
+                <h4>{{.Name}}</h4>
+                <p>&nbsp;&nbsp;&nbsp;{{.Desc}}</p>
+              </div>
+            </li>
+            {{end}}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="LatestNews">
+      <div class="Column-heading">
+        <h3><i class="fa fa-list fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;启林动态</h3>
+        <a href="#">
+          <p>更多&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
+        </a>
+      </div>
+      <div class="LatestNews-wrapper">
         <ul>
-          {{range .news}}  
+          {{range .news}}
           <li>
-            <div class="InterviewHead">
-              <img src="img/new3.jpg" class="InterHeadImg" />
-              <h4>{{.Title}}</h4>
-            </div>
-            <div class="InterviewContent">
-              <h4>{{.Name}}</h4>
-              <p>&nbsp;&nbsp;&nbsp;{{.Desc}}</p >
-            </div>
+            <p class="LNewsTime"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;{{time2014 .Utime}}</p>
+            <p class="LNewsTitle">{{.Name}}</p>
+          </li>
+          {{end}}
+        </ul>
+        <ul>
+          {{range .news}}
+          <li>
+            <p class="LNewsTime"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;{{time2014 .Utime}}</p>
+            <p class="LNewsTitle">{{.Name}}</p>
           </li>
           {{end}}
         </ul>
       </div>
     </div>
   </div>
-  <div class="LatestNews">
-    <div class="Column-heading">
-      <h3><i class="fa fa-list fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;启林动态</h3>
-      <a href="#">
-        <p>更多&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></p >
-      </a >
-
-    </div>
-    <div class="LatestNews-wrapper">
-      <ul>
-        {{range .news}}
-        <li>
-          <p class="LNewsTime"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;{{time2014 .Utime}}</p >
-          <p class="LNewsTitle">{{.Name}}</p >
-        </li>
-        {{end}}
-      </ul>
-      <ul>
-        {{range .news}}
-        <li>
-          <p class="LNewsTime"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;{{time2014 .Utime}}</p >
-          <p class="LNewsTitle">{{.Name}}</p >
-        </li>
-        {{end}}
-      </ul>
-    </div>
-  </div>
-</div>
-<!--footer-->
-<div class="footer">
-  <div class="footer-wrapper">
-    <div class="footrt-link">
-      <ul>
-        {{range .link}}
-        <li><a href="#">{{.Name}}</a ></li>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer-wrapper">
+      <div class="footrt-link">
+        <ul>
+          {{range .link}}
+          <li><a href="#">{{.Name}}</a ></li>
         {{end}}
       </ul>
     </div>

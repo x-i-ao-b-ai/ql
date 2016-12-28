@@ -2,10 +2,11 @@ package app
 
 import (
 	"WEB/WebCore/app/models"
-	"github.com/revel/revel"
 	"html/template"
-	"labix.org/v2/mgo/bson"
 	"time"
+
+	"github.com/revel/revel"
+	"labix.org/v2/mgo/bson"
 )
 
 func init() {
@@ -22,6 +23,16 @@ func init() {
 		revel.ActionInvoker,           // 添加方法
 	}
 	//添加模板标签
+	revel.TemplateFuncs["nav"] = func(top string) template.HTML {
+		list := make([]bson.M, 0)
+		models.Doc_List("webtree", bson.M{"Top": top, "Status": 1}, &list, nil)
+		data := ""
+		for _, v := range list {
+			data = data + "<li class='nav-li'><a href='/" + v["Ty"].(string) + "/List?tid=" + v["_id"].(string) +
+				"'>" + v["Name"].(string) + "</a></li>"
+		}
+		return template.HTML(data)
+	}
 
 	revel.TemplateFuncs["left_same_level"] = func(top string) template.HTML {
 		list := make([]bson.M, 0)
