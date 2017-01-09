@@ -4,7 +4,7 @@
    height: auto;
    margin: 20px auto;
 }
-.main-left-part ul li:nth-child(3) a{
+.main-left-part ul li a.active{
      background: #CC0808;
      color: #fff;
 }
@@ -20,7 +20,7 @@
     border-bottom: 2px solid #E8E8E8; 
 }
 .right-title p{
-    width:66px;
+    width: 74px;
     height: 28px;
     line-height: 28px;
     display: block;

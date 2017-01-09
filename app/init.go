@@ -34,13 +34,23 @@ func init() {
 		return template.HTML(data)
 	}
 
+	revel.TemplateFuncs["nav2"] = func(top string) template.HTML {
+		list := make([]bson.M, 0)
+		models.Doc_List("webtree", bson.M{"Top": top, "Status": 1}, &list, nil)
+		data := ""
+		for _, v := range list {
+			data = data + "<li><a href='/" + v["Ty"].(string) + "/List?tid=" + v["_id"].(string) +
+				"'><p>" + v["Name"].(string) + "</p></a></li>"
+		}
+		return template.HTML(data)
+	}
+
 	revel.TemplateFuncs["left_same_level"] = func(top string) template.HTML {
 		list := make([]bson.M, 0)
 		models.Doc_List("webtree", bson.M{"Top": top}, &list, nil)
 		data := ""
 		for _, v := range list {
-			data = data + "<div class='onlink'> <a href='/" + v["Ty"].(string) + "/List?tid=" + v["_id"].(string) +
-				"'class='channel_nav'>" + v["Name"].(string) + "</a></div>"
+			data = data + `<li><a href="/` + v["Ty"].(string) + `/List?tid=` + v["_id"].(string) + `"><i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;` + v["Name"].(string) + `</a></li>`
 		}
 		return template.HTML(data)
 	}

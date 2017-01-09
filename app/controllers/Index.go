@@ -44,8 +44,8 @@ func (c Index) Index() revel.Result {
 
 	worStu := make([]bson.M, 0)
 	models.List_Limit("doc", bson.M{"Tid": "xgdt"}, &worStu, nil, 6)
-	c.RenderArgs["worStu1"] = worStu[0]
-	c.RenderArgs["worStu"] = worStu[1:]
+	// c.RenderArgs["worStu1"] = worStu[0]
+	// c.RenderArgs["worStu"] = worStu[1:]
 
 	return c.RenderTemplate(models.Theme + "/Index.html")
 }

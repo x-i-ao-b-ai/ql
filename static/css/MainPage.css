@@ -316,6 +316,7 @@ body{
     height: 30px;
     margin: 5px 0px;
     float: left;
+    overflow: hidden;
 }
 .LNewsTime{
     display: block;
