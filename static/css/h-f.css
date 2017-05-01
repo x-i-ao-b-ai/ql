@@ -34,7 +34,6 @@ body{
 }
 .banner-wrapper_right{
     float: right;
-    width:;
 }
 .banner-button{
     width:60px;
@@ -96,23 +95,18 @@ body{
     list-style-type: none;
 }
 .nav-wrap ul li:first-child{
-    width:174px;
     border-left:2px solid #DC4F31;
 }
-
-.nav-wrap ul li:last-child{
-    width:170px;
-    border-right:2px solid #DC4F31;
-}
 .nav-li{
-    width:180px;
     height:48px;
     float: left;
     border-left:1px solid #DC4F31;
     border-right:1px solid #DC4F31;
+    padding: 0 40px;
 }
 .nav-li:hover{
-    background:#F02A2A;;
+    background:#F02A2A;
+    cursor: pointer;
 }
 .nav-li a{
     display: block;
@@ -136,16 +130,12 @@ body{
 }
 .nav-li a:hover{
     color: #fff;
-    font-size: 20px;
-    font-family: 'SimSun';
     font-weight: 600;
 }
 a{
     text-decoration: none;
     color: #000000;
 }
-
-
 .footer{
     width: 100%;
     height: 300px;
