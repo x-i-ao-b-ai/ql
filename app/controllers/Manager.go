@@ -44,11 +44,11 @@ func (c Manager) Check(tid string, id string) revel.Result {
 	c.RenderArgs["tree"] = tree
 	c.RenderArgs["cout"] = cout
 
-	return c.RenderTemplate(models.Theme + "/cout.html")
+	return c.RenderTemplate(models.Theme + "/manager/check.html")
 }
 
 
-func (c Manager) Stop(tid string, id string) revel.Result {
+func (c Manager) done(tid string, id string) revel.Result {
 	tree := bson.M{}
 	models.One("webtree", bson.M{"_id": tid}, &tree, nil)
 	cout := bson.M{}
@@ -58,7 +58,7 @@ func (c Manager) Stop(tid string, id string) revel.Result {
 	c.RenderArgs["tree"] = tree
 	c.RenderArgs["cout"] = cout
 
-	return c.RenderTemplate(models.Theme + "/cout.html")
+	return c.RenderTemplate(models.Theme + "/manager/done.html")
 }
 
 func (c Manager) List(tid string, id string) revel.Result {
@@ -71,7 +71,7 @@ func (c Manager) List(tid string, id string) revel.Result {
 	c.RenderArgs["tree"] = tree
 	c.RenderArgs["cout"] = cout
 
-	return c.RenderTemplate(models.Theme + "/cout.html")
+	return c.RenderTemplate(models.Theme + "/manager/list.html")
 }
 
 func (c Manager) DownLoad(tid string, id string) revel.Result {
@@ -84,5 +84,5 @@ func (c Manager) DownLoad(tid string, id string) revel.Result {
 	c.RenderArgs["tree"] = tree
 	c.RenderArgs["cout"] = cout
 
-	return c.RenderTemplate(models.Theme + "/cout.html")
+	return c.RenderTemplate(models.Theme + "/manager/download.html")
 }

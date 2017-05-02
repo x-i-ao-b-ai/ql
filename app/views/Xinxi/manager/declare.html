@@ -1,19 +1,11 @@
- {{template "header.html" .}}
+{{template "header.html" .}}
 <!---content-->
 <div class="content">
   <div class="AnnocePage">
     <div class="wrapper-nav">
       <div class="nav-id">
-        <span class="nav-idnow">当前位置：
-                            <a>项目管理</a>
-                        </span>
+        <span class="nav-idnow">当前位置：<a>项目管理</a></span>
       </div>
-      <form class="nav-form">
-        <input class="nav-input" value="请输入关键字" type="text" onfocus="if(value=='请输入关键字'){value=''}" onblur="if(value==''){value='请输入关键字'}"
-        />
-        <button type="submit" value="" class="nav-submit"><i class="fa fa-search fa-lg"></i></button>
-      </form>
-
     </div>
     <div class="wrap-main">
       <div class="main-left">
@@ -52,7 +44,7 @@
       </div>
       <div class="main-right">
         <div class="right-title">
-          <p>{{.tree.Name}}</p>
+          <p>项目申报</p>
         </div>
         <ul class="right-wrap">
           <li>
