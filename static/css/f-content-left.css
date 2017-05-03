@@ -52,7 +52,7 @@
 .main-left{
    padding-right: 20px;
     min-height:430px;
-    width: 270px;
+    width: 140px;
   float: left;
   margin-bottom: 20px;
     background: url(../img/img/diver.png) no-repeat right top;
@@ -91,10 +91,8 @@
     
 }
 .main-left-part ul li a{
-    width:85%;
     height: 37px;
     display: block;
-    padding-left: 15px;
     line-height: 37px;
     text-align: left;
     color: #000;

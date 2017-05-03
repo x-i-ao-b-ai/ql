@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"WEB/WebCore/app/models"
+
 	"github.com/revel/revel"
 	"labix.org/v2/mgo/bson"
 )
@@ -47,8 +48,7 @@ func (c Manager) Check(tid string, id string) revel.Result {
 	return c.RenderTemplate(models.Theme + "/manager/check.html")
 }
 
-
-func (c Manager) done(tid string, id string) revel.Result {
+func (c Manager) Done(tid string, id string) revel.Result {
 	tree := bson.M{}
 	models.One("webtree", bson.M{"_id": tid}, &tree, nil)
 	cout := bson.M{}

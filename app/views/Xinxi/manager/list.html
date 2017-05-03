@@ -1,0 +1,72 @@
+{{template "header.html" .}}
+<!---content-->
+<div class="content">
+  <div class="AnnocePage">
+    <div class="wrapper-nav">
+      <div class="nav-id">
+        <span class="nav-idnow">当前位置：<a>项目管理</a></span>
+      </div>
+    </div>
+    <div class="wrap-main">
+      <div class="main-left">
+        <div class="main-left-part">
+          <div class="left-part-top">
+            <p>&nbsp;&nbsp;栏目导航</p>
+          </div>
+          <ul>
+            <li>
+              <a href="/Manager/Declare">
+                <i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; 项目申报
+              </a>
+            </li>
+            <li>
+              <a href="/Manager/Check">
+                <i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; 项目中检
+              </a>
+            </li>
+            <li>
+              <a href="/Manager/Done">
+                <i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; 项目结题
+              </a>
+            </li>
+            <li>
+              <a href="/Manager/List">
+                <i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; 项目状态查询
+              </a>
+            </li>
+            <li>
+              <a href="/Manager/DownLoad">
+                <i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; 表格下载
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-right">
+        <div class="right-title">
+          <p>项目状态查询</p>
+        </div>
+        <ul class="right-wrap">
+          <li>
+            {{range .news}}
+            <a>
+              <p>&diams;&nbsp;&nbsp;{{.Name}}</p>
+              <span>{{time2014 .Utime}}</span>
+            </a>
+            {{end}}
+          </li>
+        </ul>
+        <div class="fenye">
+          页次：&nbsp;1/1&nbsp;每页25 &nbsp;总数1 &nbsp;首页 &nbsp;&nbsp;上一页&nbsp;&nbsp; 下一页 &nbsp;&nbsp;尾页&nbsp;&nbsp; 转到：
+          <select><option>第1页</option></select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---footer-->
+{{template "footer.html" .}}
+</body>
+
+</html>
